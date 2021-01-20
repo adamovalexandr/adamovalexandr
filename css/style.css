@@ -1,0 +1,920 @@
+@import url(//db.onlinewebfonts.com/c/59e78317900df124c3780e2334b0f77a?family=Franklin+Gothic+Heavy);
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 18px;
+    font-family: 'Franklin Gothic Book', arial;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    background-color: fuchsia;
+    color: white;
+}
+
+.container {
+    margin: 15px;
+    margin-bottom: 0;
+    border: 3px solid black;
+}
+
+.block {
+    margin: 0 15px;
+    border: 3px solid black;
+    border-top: 0;
+    height: 103px;
+}
+
+.public {
+    height: 358px;
+}
+
+.header {
+    display: flex;
+}
+
+.house-face {
+    position: absolute;
+    top: 0;
+    left: 25%;
+}
+
+.house-face img {
+    width: 70%;
+}
+
+.logo {
+    position: relative;
+    padding: 45px 45px;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.logo h6 {
+    font-size: 0.5em;
+    font-weight: 900;
+    padding-left: 120px;
+}
+
+.links {
+    display: inline-flex;
+}
+
+.links .below-header {
+    margin-left: 9%;
+    margin-top: 0px;
+    text-align: right;
+    display: flexbox;
+    position: absolute;
+    top: 200px;
+    left: 3%;
+}
+
+.links .below-header h4 {
+    padding-bottom: 20px;
+    font-size: 1.7em;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.social {
+    display: inline-flex;
+    position: absolute;
+    top: 330px;
+    left: 15%;
+    font-size: 1.2em;
+    font-style: oblique;
+}
+
+.social a {
+    margin-left: 15px;
+    font-weight: normal;
+}
+
+.links .some-text {
+    margin-top: 0px;
+    text-align: end;
+    display: flexbox;
+    position: absolute;
+    top: 80px;
+    text-transform: uppercase;
+    right: 45px;
+    width: 1050px;
+}
+
+.two-block {
+    display: grid;
+    grid-template-columns: 40% 40% 3fr;
+    height: 100%;
+}
+
+.two-block div {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.two-block p {
+    padding: 35px 0;
+}
+
+.rec {
+    display: flexbox;
+    position: absolute;
+    top: 377px;
+    right: 15px;
+    background-color: rgb(37, 37, 37);
+    width: 300px;
+    height: 213px;
+}
+
+.rec div {
+    height: 100%;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.three-block {
+    display: inline-flex;
+    font-size: 1.5em;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.three-block div {
+    margin-left: 10%;
+    text-align: center;
+}
+
+.four-block {
+    font-size: 1.5em;
+    height: 100%;
+    display: flex;
+    margin-left: 20%;
+    align-items: center;
+}
+
+.rec2 {
+    display: flexbox;
+    position: absolute;
+    top: 695px;
+    right: 15px;
+    font-style: italic;
+    background-color: rgb(37, 37, 37);
+    width: 450px;
+    height: 213px;
+}
+
+.rec2 div {
+    height: 100%;
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.five-block {
+    font-size: 1.5em;
+    height: 100%;
+    display: flex;
+    padding-left: 10%;
+    align-items: center;
+    /* align vertical */
+    /* border: 1px solid red; */
+}
+
+.footer {
+    padding: 10px 15px;
+    text-align: justify;
+}
+
+.rec3 {
+    display: flexbox;
+    position: absolute;
+    top: 1015px;
+    right: 15px;
+    background-color: rgb(37, 37, 37);
+    width: 350px;
+    height: 213px;
+}
+
+.rec3 div {
+    height: 100%;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    /* align horizontal */
+    align-items: center;
+    /* align vertical */
+}
+
+.six-block {
+    /* border: 3px dashed rgb(106, 13, 13); */
+    display: inline-flex;
+    font-size: 1.5em;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* align vertical */
+}
+
+.six-block div {
+    margin-left: 15%;
+    text-align: center;
+}
+
+.six div {
+    margin-left: 4%;
+    margin-right: 20%;
+}
+
+.links .some-text {
+    font-size: 1.2em;
+    width: 50%;
+}
+
+
+@media (min-width: 1025px) and (max-width: 1470px) {
+    .two-block {
+        grid-template-columns: 35% 35% 3fr;
+    }
+    .two-block div {
+        font-size: 1.2em;
+    }
+    .social {
+        left: 16%;
+    }
+    .house-face {
+        left: 30%;
+    }
+    .links .below-header {
+        margin-left: 3%;
+        
+        left: 10%;
+        font-size: 1em;
+    }
+    .links .some-text {
+        text-align: right;
+        display: flexbox;
+        font-size: 1em;
+        position: absolute;
+        top: 60px;
+        text-transform: uppercase;
+        /* width: 410px;; */
+        width: 40%;
+    }
+    .three-block {
+        font-size: 1.2em;
+    }
+    .four-block {
+        font-size: 1.2em;
+    }
+    .five-block {
+        font-size: 1.2em;
+    }
+    .six-block {
+        font-size: 1.2em;
+        width: 100%;
+    }
+    .six-block div {
+        margin-left: 8%;
+        text-align: center;
+    }
+    .six div {
+        margin-left: 4%;
+        margin-right: 7%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .house-face {
+        position: absolute;
+        top: 0;
+        left: 24%;
+    }
+    .house-face img {
+        width: 60%;
+    }
+    .links .below-header {
+        margin-left: 3%;
+        top: 155px;
+        left: 3%;
+        font-size: 0.9em;
+    }
+    .social {
+        top: 290px;
+        left: 8%;
+        font-size: 1.1em;
+    }
+    .logo {
+        position: relative;
+        padding: 25px 25px;
+    }
+    .logo img {
+        width: 150px;
+    }
+    .logo h6 {
+        font-size: 0.7em;
+        padding-left: 25%;
+    }
+    .rec {
+        transform: rotate(-90deg);
+        top: 432px;
+        right: -40px;
+        width: 215px;
+        height: 103px;
+    }
+    .rec div {
+        font-size: 1.5em;
+    }
+    .two-block {
+        grid-template-columns: 35% 45% 1fr;
+    }
+    .two-block div {
+        font-size: 1.2em;
+    }
+    .links .some-text {
+        text-align: right;
+        display: flexbox;
+        font-size: 0.8em;
+        position: absolute;
+        top: 60px;
+        text-transform: uppercase;
+        /* width: 410px;; */
+        width: 40%;
+    }
+    .rec2 {
+        transform: rotate(-90deg);
+        top: 750px;
+        right: -40px;
+        width: 215px;
+        height: 103px;
+    }
+    .rec2 div {
+        font-size: 1.4em;
+    }
+    .rec3 {
+        transform: rotate(-90deg);
+        top: 1070px;
+        right: -40px;
+        width: 215px;
+        height: 103px;
+    }
+    .rec3 div {
+        font-size: 1.2em;
+    }
+    .three-block {
+        font-size: 1.3em;
+    }
+    .four-block {
+        font-size: 1.3em;
+    }
+    .five-block {
+        font-size: 1.3em;
+    }
+    .six-block {
+        font-size: 1.3em;
+        width: 100%;
+    }
+    .six-block div {
+        margin-left: 8%;
+        text-align: center;
+    }
+    .six div {
+        margin-left: 4%;
+        margin-right: 7%;
+    }
+}
+
+@media (min-width: 614px) and (max-width: 767px) {
+    .container {
+        height: 395px;
+    }
+    .house-face {
+        position: absolute;
+        top: 0;
+        left: 0%;
+        margin-right: 0;
+        padding-right: 0;
+        
+    }
+    .house-face img {
+        width: 60%;
+    }
+    .links .below-header {
+        margin-left: 40%;
+        top: 195px;
+        left: 0px;
+        font-size: 0.9em;
+        text-align: left;
+    }
+    .social {
+        top: 320px;
+        left: 37%;
+        font-size: 1.2em;
+    }
+    .logo {
+        position: absolute;
+        padding: 65px 45px 0 0;
+        top: 10px;
+        right: 10px;
+    }
+    .logo img {
+        width: 200px;
+    }
+    .logo h6 {
+        font-size: 0.8em;
+        padding-left: 35%;
+    }
+    .rec {
+        transform: rotate(-90deg);
+        top: 468px;
+        right: -40px;
+        width: 215px;
+        height: 103px;
+    }
+    .rec div {
+        font-size: 1.5em;
+    }
+    .two-block {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .two-block div {
+        font-size: 1em;
+        margin: -100px 0px;
+        padding-bottom: 200px;
+        font-size: 1.2em;
+        width: 65%;
+    }
+    .right p {
+        text-align: end;
+    }
+    .links .some-text {
+        font-size: 0px;
+        color: black;
+    }
+    .rec2 {
+        transform: rotate(-90deg);
+        top: 785px;
+        right: -40px;
+        width: 215px;
+        height: 103px;
+    }
+    .rec2 div {
+        font-size: 1.4em;
+    }
+    .rec3 {
+        transform: rotate(-90deg);
+        top: 1157px;
+        right: -90px;
+        width: 318px;
+        height: 103px;
+    }
+    .rec3 div {
+        font-size: 1.4em;
+    }
+    .three-block {
+        font-size: 1.2em;
+    }
+    .four-block {
+        font-size: 1.2em;
+    }
+    .five-block {
+        font-size: 1.2em;
+    }
+    .six-block {
+        font-size: 1.2em;
+        width: 80%;
+    }
+    .six-block div {
+        margin-left: 9%;
+        text-align: center;
+    }
+    .fly {
+        diplay: flexbox;
+        position: absolute;
+        top: 1300px;
+        left: 55%;
+    }
+    .below {
+        diplay: flexbox;
+        position: absolute;
+        top: 1300px;
+        left: 15%;
+    }
+    .six div {
+        margin-left: 9%;
+        margin-right: 7%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 613px) {
+    .container {
+        height: 395px;
+    }
+    .house-face {
+        position: absolute;
+        top: 0;
+        left: 0%;
+    }
+    .house-face img {
+        width: 60%;
+    }
+    .links .below-header {
+        margin-left: 50%;
+        top: 195px;
+        left: 0px;
+        font-size: 0.9em;
+        text-align: left;
+    }
+    .social {
+        top: 320px;
+        left: 47%;
+        font-size: 1.2em;
+    }
+    .logo {
+        position: absolute;
+        padding: 65px 45px 0 0;
+        top: 10px;
+        right: 10px;
+    }
+    .logo img {
+        width: 200px;
+    }
+    .logo h6 {
+        font-size: 0.8em;
+        padding-left: 35%;
+    }
+    .rec {
+        transform: rotate(-90deg);
+        top: 468px;
+        right: -40px;
+        width: 215px;
+        height: 103px;
+    }
+    .rec div {
+        font-size: 1.5em;
+    }
+    .two-block {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .two-block div {
+        margin: -100px 0px;
+        padding-bottom: 210px;
+        font-size: 1em;
+        width: 70%;
+    }
+    .go {
+        margin: 0;
+    }
+    .right p {
+        text-align: end;
+    }
+    .links .some-text {
+        font-size: 0px;
+        color: black;
+    }
+    .rec2 {
+        transform: rotate(-90deg);
+        top: 785px;
+        right: -40px;
+        width: 215px;
+        height: 103px;
+    }
+    .rec2 div {
+        font-size: 1.4em;
+    }
+    .rec3 {
+        transform: rotate(-90deg);
+        top: 1157px;
+        right: -90px;
+        width: 318px;
+        height: 103px;
+    }
+    .rec3 div {
+        font-size: 1.4em;
+    }
+    .three-block {
+        font-size: 1em;
+    }
+    .four-block {
+        font-size: 1em;
+    }
+    .five-block {
+        font-size: 1em;
+    }
+    .six-block {
+        font-size: 1em;
+        width: 90%;
+    }
+    .six-block div {
+        margin-left: 9%;
+        text-align: center;
+    }
+    .fly {
+        diplay: flexbox;
+        position: absolute;
+        top: 1090px;
+        left: 45%;
+    }
+    .flight {
+        diplay: flexbox;
+        position: absolute;
+        top: 1309px;
+        left: 30%;
+    }
+    .below {
+        diplay: flexbox;
+        position: absolute;
+        top: 1309px;
+        left: 5%;
+    }
+    .six div {
+        margin-left: 10%;
+        margin-right: 7%;
+    }
+}
+
+@media (min-width: 371px) and (max-width: 480px) {
+    .container {
+        height: 325px;
+    }
+    .house-face {
+        position: absolute;
+        top: 0;
+        left: 0%;
+    }
+    .house-face img {
+        width: 50%;
+    }
+    .links .below-header {
+        margin-left: 55%;
+        top: 155px;
+        left: 0px;
+        font-size: 0.7em;
+        text-align: left;
+    }
+    .social {
+        top: 270px;
+        left: 51%;
+        font-size: 1em;
+    }
+    .logo {
+        position: absolute;
+        padding: 35px 35px 0 0;
+        top: 10px;
+        right: 10px;
+    }
+    .logo img {
+        width: 140px;
+    }
+    .logo h6 {
+        font-size: 0.6em;
+        padding-left: 15%;
+    }
+    .rec {
+        transform: rotate(-90deg);
+        top: 414px;
+        right: -55px;
+        width: 215px;
+        height: 72px;
+    }
+    .rec div {
+        font-size: 1.2em;
+    }
+    .two-block {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .right p {}
+    .go {}
+    .two-block div {
+        margin: -97px 0px;
+        padding-bottom: 210px;
+        font-size: 0.8em;
+        width: 80%;
+    }
+    .links .some-text {
+        font-size: 0px;
+        color: black;
+    }
+    .rec2 {
+        transform: rotate(-90deg);
+        top: 733px;
+        right: -57px;
+        width: 215px;
+        height: 72px;
+    }
+    .rec2 div {
+        font-size: 1.2em;
+    }
+    .rec3 {
+        transform: rotate(-90deg);
+        top: 1050px;
+        right: -55px;
+        width: 215px;
+        height: 72px;
+    }
+    .rec3 div {
+        font-size: 1.1em;
+    }
+    .three-block {
+        font-size: 0.8em;
+    }
+    .four-block {
+        font-size: 0.8em;
+    }
+    .five-block {
+        font-size: 0.8em;
+    }
+    .six-block {
+        font-size: 0.8em;
+        width: 90%;
+    }
+    .six-block div {
+        margin-left: 9%;
+        text-align: center;
+    }
+    .fly {
+        diplay: flexbox;
+        position: absolute;
+        top: 1131px;
+        left: 57%;
+    }
+    .flight {
+        diplay: flexbox;
+        position: absolute;
+        top: 1241px;
+        left: 25%;
+    }
+    .below {
+        diplay: flexbox;
+        position: absolute;
+        top: 1025px;
+        left: 45%;
+    }
+    .six div {
+        margin-left: 10%;
+        margin-right: 7%;
+    }
+    .footer {
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 370px) {
+    .block {
+        margin: 0 15px;
+        border: 3px solid black;
+        border-top: 0;
+        height: 53px;
+    }
+    .container {
+        height: 278px;
+    }
+    .house-face {
+        position: absolute;
+        top: 0;
+        left: 0%;
+    }
+    .house-face img {
+        width: 160px;
+    }
+    .links .below-header {
+        margin-left: 55%;
+        top: 145px;
+        left: 0px;
+        font-size: 0.6em;
+        text-align: left;
+    }
+    .social {
+        top: 240px;
+        left: 51%;
+        font-size: .8em;
+    }
+    .logo {
+        position: absolute;
+        padding: 30px 30px 0 0;
+        top: 10px;
+        right: 10px;
+    }
+    .logo img {
+        width: 110px;
+    }
+    .logo h6 {
+        font-size: 0.5em;
+        padding-left: 15%;
+    }
+    .rec {
+        transform: rotate(-90deg);
+        top: 330px;
+        right: -15px;
+        width: 112px;
+        height: 50px;
+    }
+    .rec div {
+        font-size: 0.7em;
+    }
+    .two-block {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .right p {}
+    .go {}
+    .two-block div {
+        margin: -68px 0px;
+        padding-bottom: 100px;
+        font-size: 0.7em;
+        width: 80%;
+    }
+    .links .some-text {
+        font-size: 0px;
+        color: black;
+    }
+    .rec2 {
+        transform: rotate(-90deg);
+        top: 497px;
+        right: -15px;
+        width: 112px;
+        height: 50px;
+    }
+    .rec2 div {
+        font-size: 0.7em;
+    }
+    .rec3 {
+        transform: rotate(-90deg);
+        top: 692px;
+        right: -45px;
+        width: 170px;
+        height: 50px;
+    }
+    .rec3 div {
+        font-size: 0.7em;
+    }
+    .three-block {
+        font-size: 0.7em;
+    }
+    .four-block {
+        font-size: 0.7em;
+    }
+    .five-block {
+        font-size: 0.7em;
+    }
+    .six-block {
+        font-size: 0.7em;
+        width: 90%;
+    }
+    .six-block div {
+        margin-left: 9%;
+        text-align: center;
+    }
+    .fly {
+        diplay: flexbox;
+        position: absolute;
+        top: 653px;
+        left: 55%;
+    }
+    .flight {
+        diplay: flexbox;
+        position: absolute;
+        top: 766px;
+        left: 3%;
+    }
+    .below {
+        diplay: flexbox;
+        position: absolute;
+        top: 766px;
+        left: 48%;
+    }
+    .six div {
+        margin-left: 10%;
+        margin-right: 7%;
+    }
+    .footer {
+        font-size: 0.6em;
+    }
+}
